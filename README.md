@@ -26,6 +26,20 @@ Telescope supports reasonably recent versions of the following browsers:
 - Apple Safari
 - Microsoft Edge
 
+## Examples
+To view the examples, clone the Express repo and install the dependencies:
+<pre>
+$ git clone https://github.com/getspooky/telescope.git
+$ cd telescope
+$ npm install
+</pre>
+
+Then run whichever example you want:
+
+<pre>
+$ npm run test-app
+</pre>
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Telescope, please send an e-mail to Yasser Ameur El Idrissi via `getspookydev@gmail.com` . All security vulnerabilities will be promptly addressed.
