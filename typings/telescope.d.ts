@@ -9,4 +9,4 @@ import {NextFunction, Request, Response} from "express";
  * @param next
  * @return {void}
  */
-export declare function Oops({name,message,stack}: Error, req:Request, res:Response, next: NextFunction):void;
+export declare function Telescope({name,message,stack}: Error, req:Request, res:Response, next: NextFunction):void;
