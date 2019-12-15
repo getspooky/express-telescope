@@ -1,0 +1,6 @@
+{
+  "getErrorTitle": "Page not Found",
+  "getDocumentationLinks": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404",
+  "getSolutionTitle": "You can put a middleware at the last position that throws a NotFound error or even renders the 404 page directly",
+  "getErrorDescription": "The 401 Unauthorized error is an HTTP status code that means the page you were trying to access cannot be loaded until you first log in with a valid user ID and password.If you've just logged in and received the 401 Unauthorized error, it means that the credentials you entered were invalid for some reason.401 Unauthorized error messages are often customized by each website, especially very large ones, so keep in mind that this error may present itself in more ways than these common ones: 401 Unauthorized, Authorization Required, HTTP Error 401 - Unauthorized"
+}

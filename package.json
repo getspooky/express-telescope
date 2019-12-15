@@ -1,0 +1,59 @@
+{
+  "name": "express-telescope",
+  "version": "1.0.1",
+  "description": "A beautiful error page for Expressjs apps ",
+  "keywords": [
+    "Nodejs",
+    "express",
+    "errors",
+    "exception",
+    "api",
+    "ejs",
+    "handle"
+  ],
+  "author": "Yasser Ameur El Idrissi",
+  "license": "MIT",
+  "main": "dist/lib/telescope.js",
+  "types": "typings/telescope.d.ts",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "nodemon lib/Telescope.ts",
+    "build": "npm run copy-static-assets && tsc",
+    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "test-app": "nodemon ./examples/express.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getspooky/telescope"
+  },
+  "bugs": {
+    "url": "https://github.com/getspooky/telescope/issues"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "nodemon": "^2.0.2",
+    "stacktrace-parser": "^0.1.8"
+  },
+  "devDependencies": {
+    "@types/ejs": "^2.0.4",
+    "@types/eslint": "^6.1.1",
+    "@types/express": "^4.17.1",
+    "@types/ip": "^1.1.0",
+    "@types/shelljs": "^0.8.6",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "module-alias": "^2.2.2",
+    "node-sass": "^4.13.0",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}

@@ -1,0 +1,26 @@
+<div class="oops segment error">
+  <span class="file-path">
+    <i class="fa fa-github github" onclick="window.open('https://github.com/expressjs/express/issues')"></i>
+    <i class="fa fa-stack-overflow stackoverflow" onclick="window.open('https://stackoverflow.com/questions/tagged/express%20node.js?sort=Newest&edited=true')"></i>
+    <% if(stack !== null){ %>
+      <%= stack.file %>
+    <% } else { %>
+      Not Found
+    <% } %>
+  </span>
+  <hr class="hr-text" data-content="DETAILS" />
+  <h1 class="m-t-35"><%= name %> Line : <%= stack.lineNumber %></h1>
+  <h3>
+    <%= message %>
+  </h3>
+  <label class="oops badge">Applications frames (<%= stack.frames %>)</label>
+</div>
+
+<% if(solution !== null){ %>
+<div class="oops segment solution">
+  <h1><i class="fa fa-key"></i> Solution</h1>
+  <p><%= solution.getSolutionTitle %></p>
+  <h1><i class="fa fa-info-circle"></i> Details</h1>
+  <p><%= solution.getErrorDescription %></p>
+</div>
+<% } %>
