@@ -1,6 +1,6 @@
 ##  Telescope: A beautiful error page for Expressjs apps
 
-[Telescope]() is a beautiful and customizable error page for expressjs applications for both development mode.
+[Telescope]() is a beautiful and customizable error page for expressjs applications for both development and production mode.
 Feel free to check out the [changelog](/CHANGELOG.md), [security policy](.github/SECURITY.md), [license](LICENSE.md), [commit convention](.github/COMMIT_CONVENTION.md).
 
 ![solution](docs/screenshot.png)
