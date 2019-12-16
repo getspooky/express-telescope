@@ -5,7 +5,9 @@
 *.js eol=lf
 *.ts eol=lf
 
-dist export-ignore
-README.md export-ignore
+# Ignore all test and documentation with “export-ignore”.
 .gitattributes export-ignore
 .gitignore export-ignore
+README.md export-ignore
+/docs export-ignore
+/dist export-ignore
