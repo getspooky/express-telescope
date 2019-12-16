@@ -5,6 +5,10 @@
 *.js eol=lf
 *.ts eol=lf
 
+# Remove compiled assets from github statistics
+public/build/css/*.css linguist-vendored
+public/build/js/* linguist-vendored
+
 # Ignore all test and documentation with “export-ignore”.
 .gitattributes export-ignore
 .gitignore export-ignore
