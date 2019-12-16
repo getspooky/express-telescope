@@ -26,6 +26,7 @@
     "dev": "nodemon lib/Telescope.ts",
     "build": "npm run copy-static-assets && tsc",
     "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "serve": "nodemon dist/examples/express.js",
     "test-app": "nodemon ./examples/express.ts"
   },
   "repository": {
