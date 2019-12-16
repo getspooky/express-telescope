@@ -12,6 +12,9 @@
     "handle"
   ],
   "author": "Yasser Ameur El Idrissi",
+  "contributors": [
+    
+  ],
   "license": "MIT",
   "main": "dist/lib/telescope.js",
   "types": "typings/telescope.d.ts",
