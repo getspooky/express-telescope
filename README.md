@@ -3,6 +3,8 @@
 [Telescope]() is a beautiful and customizable error page for expressjs applications for both development and production mode.
 Feel free to check out the [changelog](/CHANGELOG.md), [security policy](.github/SECURITY.md), [license](LICENSE.md), [commit convention](.github/COMMIT_CONVENTION.md).
 
+[![Build Status](https://travis-ci.com/getspooky/express-telescope.svg?branch=master)](https://travis-ci.com/getspooky/express-telescope)
+
 ![solution](docs/screenshot.png)
 
 ## Requirements
@@ -12,6 +14,8 @@ Telescope has a few requirements you should be aware of before installing:
 - npm >= 6.10.3
 
 ## Installation
+[![NPM](https://nodei.co/npm/express-telescope.png)](https://nodei.co/npm/express-telescope/)
+
 This is a Node.js module available through the npm registry.
 Installation is done using the [npm install command](https://docs.npmjs.com/downloading-and-installing-packages-locally):
 <pre>
