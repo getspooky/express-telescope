@@ -1,6 +1,6 @@
 {
   "name": "express-telescope",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A beautiful error page for Expressjs apps ",
   "keywords": [
     "Nodejs",
@@ -22,15 +22,17 @@
   "scripts": {
     "dev": "nodemon lib/Telescope.ts",
     "build": "npm run copy-static-assets && tsc",
+    "serve": "nodemon dist/examples/express.js",
     "copy-static-assets": "ts-node copyStaticAssets.ts",
-    "test-app": "nodemon ./examples/express.ts"
+    "example": "nodemon ./examples/server.ts",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/getspooky/telescope"
+    "url": "git+https://github.com/getspooky/express-telescope"
   },
   "bugs": {
-    "url": "https://github.com/getspooky/telescope/issues"
+    "url": "https://github.com/getspooky/express-telescope/issues"
   },
   "dependencies": {
     "chalk": "^3.0.0",
@@ -45,14 +47,19 @@
     "@types/eslint": "^6.1.1",
     "@types/express": "^4.17.1",
     "@types/ip": "^1.1.0",
+    "@types/jest": "^24.0.23",
     "@types/shelljs": "^0.8.6",
+    "@types/supertest": "^2.0.8",
     "@typescript-eslint/eslint-plugin": "^2.3.1",
     "@typescript-eslint/parser": "^2.3.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
+    "jest": "^24.9.0",
     "module-alias": "^2.2.2",
     "node-sass": "^4.13.0",
     "shelljs": "^0.8.3",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.2.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
   }
