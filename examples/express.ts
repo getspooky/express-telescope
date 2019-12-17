@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 app.use(express.static(public_url));
 
 app.get('/telescope', function (req: Request, res: Response) {
-  throw new Error("Unauthorized error: Access to this resource is denied");
+  throw new Error("Bad Request");
 });
 
 app.use(Telescope);

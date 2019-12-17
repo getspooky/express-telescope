@@ -9,6 +9,7 @@ const get_content = promisify(readFile);
 
 import * as MissingPackageSolution from './Solutions/MissingPackageSolution.json';
 import * as PageNotFoundSolution from './Solutions/PageNotFoundSolution.json';
+import * as BadRequestSolution from './Solutions/BadRequestSolution.json';
 
 /**
  * Register the solutions for the application.
@@ -17,6 +18,7 @@ import * as PageNotFoundSolution from './Solutions/PageNotFoundSolution.json';
 const Solution:Array<ISolution> = [
  MissingPackageSolution,
  PageNotFoundSolution,
+ BadRequestSolution,
 ];
 
 /**

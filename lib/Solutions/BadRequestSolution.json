@@ -1,0 +1,7 @@
+{
+  "getErrorTitle": "Bad Request",
+  "getDocumentationLinks": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+  "getSolutionTitle": "Complete the steps outlined in this section to help diagnose and correct a 400 Bad Request. \n The proposed solutions include :\n 1: Check the Submitted URL 2: Clear Browser Cache 3: Clear Browser Cookies 4: Clear DNS Cache",
+  "getErrorDescription": "The HyperText Transfer Protocol (HTTP) 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing)."
+}
+
