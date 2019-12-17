@@ -1,6 +1,20 @@
-# Auto detect text files and perform LF normalization
+# Set the default behavior, in case users don't have core.autocrlf set
 * text=auto
 
-# JS and TS files must always use LF for tools to work
-*.js eol=lf
-*.ts eol=lf
+# Files that should always be normalized and converted to native line
+# endings on checkout.
+*.js text
+*.json text
+*.ts text
+*.md text
+*.yml text
+LICENSE text
+
+# Files that are truly binary and should not be modified
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.jar binary
+*.zip binary
+*.psd binary
