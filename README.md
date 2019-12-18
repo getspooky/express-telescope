@@ -19,7 +19,7 @@ Telescope has a few requirements you should be aware of before installing:
 This is a Node.js module available through the npm registry.
 Installation is done using the [npm install command](https://docs.npmjs.com/downloading-and-installing-packages-locally):
 <pre>
- npm install express-telescope
+ npm install express-telescope --save-dev
 </pre>
 
 ## Browser Support
@@ -41,7 +41,7 @@ $ npm install
 Then run whichever example you want:
 
 <pre>
-$ npm run test-app
+$ npm run example
 </pre>
 
 ## Security Vulnerabilities
