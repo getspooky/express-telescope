@@ -41,7 +41,7 @@ $ npm install
 Then run whichever example you want:
 
 <pre>
-$ npm run test-app
+$ npm run example
 </pre>
 
 ## Security Vulnerabilities
