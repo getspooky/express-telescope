@@ -1,5 +1,7 @@
 import {Response, Request, NextFunction } from 'express';
 import {parse, StackFrame} from 'stacktrace-parser';
+import path from 'path';
+import {compileFile} from 'pug';
 import {IOops} from './Interfaces/IOops';
 import {IStack} from './Interfaces/IStack';
 import {ISolution} from './Interfaces/ISolution';
@@ -49,9 +51,11 @@ export function Telescope({name,message,stack}: Error, req:Request, res:Response
     get_content(details.stack['file'], 'utf8').then((data: string) => {
       details.stack.content = data;
     }).then(()=>{
-      res.render('ErrorPage.ejs', details);
+      // Compile the source code
+      const compiledFunction = compileFile(path.join(__dirname,'../resources/views/ErrorPage.pug'));
+      res.send(compiledFunction(details));
+      // Render a set of data
+      //res.render(compiledFunction(details));
     });
   }
 }
-
-

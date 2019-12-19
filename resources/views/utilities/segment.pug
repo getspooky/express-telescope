@@ -1,0 +1,22 @@
+.oops.segment.error
+  span.file-path
+    i.fa.fa-github.github(onclick="window.open('https://github.com/expressjs/express/issues')")
+    i.fa.fa-stack-overflow.stackoverflow(onclick="window.open('https://stackoverflow.com/questions/tagged/express%20node.js?sort=Newest&edited=true')")
+    if(stack !== null)
+     |     #{stack.file}
+    else
+     |      Not Found
+  hr.hr-text(data-content='DETAILS')
+  h1.m-t-35 #{name} Line : #{stack.lineNumber}
+  h3 #{message}
+  label.oops.badge Applications frames (#{stack.frames})
+if(solution !== null)
+  .oops.segment.solution
+    h1
+      i.fa.fa-key
+      |  Solution
+    p #{solution.getSolutionTitle}
+    h1
+      i.fa.fa-info-circle
+      |  Details
+    p #{solution.getErrorDescription}
