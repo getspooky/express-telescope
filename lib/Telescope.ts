@@ -13,6 +13,7 @@ import * as MissingPackageSolution from './Solutions/MissingPackageSolution.json
 import * as PageNotFoundSolution from './Solutions/PageNotFoundSolution.json';
 import * as BadRequestSolution from './Solutions/BadRequestSolution.json';
 import * as MethodNotAllowed from './Solutions/MethodNotAllowed.json';
+import * as NotAcceptable from './Solutions/NotAcceptable.json';
 
 /**
  * Register the solutions for the application.
@@ -22,7 +23,8 @@ const Solution:Array<ISolution> = [
   MissingPackageSolution,
   PageNotFoundSolution,
   BadRequestSolution,
-  MethodNotAllowed
+  MethodNotAllowed,
+  NotAcceptable,
 ];
 
 /**
