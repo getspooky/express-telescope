@@ -14,6 +14,7 @@ import * as PageNotFoundSolution from './Solutions/PageNotFoundSolution.json';
 import * as BadRequestSolution from './Solutions/BadRequestSolution.json';
 import * as MethodNotAllowed from './Solutions/MethodNotAllowed.json';
 import * as NotAcceptable from './Solutions/NotAcceptable.json';
+import * as RequestTimeout from './Solutions/RequestTimeout.json';
 
 /**
  * Register the solutions for the application.
@@ -25,6 +26,7 @@ const Solution:Array<ISolution> = [
   BadRequestSolution,
   MethodNotAllowed,
   NotAcceptable,
+  RequestTimeout
 ];
 
 /**
@@ -55,9 +57,8 @@ export function Telescope({name,message,stack}: Error, req:Request, res:Response
     }).then(()=>{
       // Compile the source code
       const compiledFunction = compileFile(path.join(__dirname,'../resources/views/ErrorPage.pug'));
-      res.send(compiledFunction(details));
       // Render a set of data
-      //res.render(compiledFunction(details));
+      res.send(compiledFunction(details));
     });
   }
 }

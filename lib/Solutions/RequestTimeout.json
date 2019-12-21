@@ -1,0 +1,6 @@
+{
+  "getErrorTitle": "Request Timeout",
+  "getDocumentationLinks": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408",
+  "getSolutionTitle": "The default request timeout in Node v0.9+ is 2 minutes. That is what express uses, You can increase it using  req.setTimeout(360000); // 5 minutes",
+  "getErrorDescription": "This response is sent on an idle connection by some servers, even without any previous request by the client. It means that the server would like to shut down this unused connection. This response is used much more since some browsers, like Chrome, Firefox 27+, or IE9, use HTTP pre-connection mechanisms to speed up surfing. Also note that some servers merely shut down the connection without sending this message."
+}
