@@ -4,6 +4,7 @@
 Feel free to check out the [changelog](/CHANGELOG.md), [security policy](.github/SECURITY.md), [license](LICENSE.md), [commit convention](.github/COMMIT_CONVENTION.md).
 
 [![Build Status](https://travis-ci.com/getspooky/express-telescope.svg?branch=master)](https://travis-ci.com/getspooky/express-telescope)
+![npm](https://img.shields.io/npm/dw/express-telescope)
 
 ![solution](docs/screenshot.png)
 
