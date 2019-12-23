@@ -1,0 +1,7 @@
+{
+  "getErrorTitle": "HTTP Version Not Supported",
+  "getDocumentationLinks": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/505",
+  "getSolutionTitle": "This is caused by running your application using SSL but calling it via normal HTTP. You would need to put a check in place to identify if the client is using HTTP or HTTPS and then modify your code to suit.",
+  "getErrorDescription": "The HyperText Transfer Protocol (HTTP) 505 HTTP Version Not Supported response status code indicates that the HTTP version used in the request is not supported by the server.."
+}
+

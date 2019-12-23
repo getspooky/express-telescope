@@ -15,6 +15,7 @@ import * as BadRequestSolution from './Solutions/BadRequestSolution.json';
 import * as MethodNotAllowed from './Solutions/MethodNotAllowed.json';
 import * as NotAcceptable from './Solutions/NotAcceptable.json';
 import * as RequestTimeout from './Solutions/RequestTimeout.json';
+import * as HTTPVersionNotSupported from './Solutions/HTTPVersionNotSupported.json';
 
 /**
  * Register the solutions for the application.
@@ -26,7 +27,8 @@ const Solution:Array<ISolution> = [
   BadRequestSolution,
   MethodNotAllowed,
   NotAcceptable,
-  RequestTimeout
+  RequestTimeout,
+  HTTPVersionNotSupported,
 ];
 
 /**
